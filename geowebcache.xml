@@ -1,0 +1,1118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gwcConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:noNamespaceSchemaLocation="http://geowebcache.org/schema/1.2.6/geowebcache.xsd"
+                  xmlns="http://geowebcache.org/schema/1.2.6">
+<version>1.2.6</version>
+<backendTimeout>120</backendTimeout>
+
+<serviceInformation>
+<title>Cleveland Metroparks GeoWebCache</title>
+<description>GeoWebCache is an advanced tile cache for WMS servers.It supports a large variety of protocols and formats, including WMS-C, WMTS, KML, Google Maps and Virtual Earth.</description>
+<keywords>
+<keyword>WFS</keyword>
+<keyword>WMS</keyword>
+<keyword>WMTS</keyword>
+<keyword>GEOWEBCACHE</keyword>
+</keywords>
+<serviceProvider>
+<providerName>Cleveland Metroparks</providerName>
+<providerSite>TBD</providerSite>
+<serviceContact>
+<individualName>Stephen Mather</individualName>
+<positionName>GIS Manager</positionName>
+<addressType>Work</addressType>
+<addressStreet>4101 Fulton Pkwy</addressStreet>
+<addressCity>Cleveland</addressCity>
+<addressAdministrativeArea>OH</addressAdministrativeArea>
+<addressPostalCode>44144</addressPostalCode>
+<addressCountry>United States</addressCountry>
+<phoneNumber>216 635 3243</phoneNumber>
+<faxNumber>216 635 3286</faxNumber>
+<addressEmail>svm@clevelandmetroparks.com</addressEmail>
+</serviceContact>
+</serviceProvider>
+<fees>NONE</fees>
+<accessConstraints>NONE</accessConstraints>
+</serviceInformation>
+
+<gridSets>
+  <!-- Grid Set Example,
+by default EPSG:900913 and EPSG:4326 are defined -->
+  <gridSet>
+    <!-- This does not have to be an EPSG code, you can also
+have multiple gridSet elements per SRS -->
+    <name>EPSG:3734</name>
+    <srs><number>3734</number></srs>
+    <extent>
+      <coords>
+        <double>1320000</double>
+        <double>160000</double>
+        <double>2525000</double>
+        <double>976000</double>
+      </coords>
+    </extent>
+        <resolutions>
+          <double>918.6351706036746</double>
+          <double>459.31758530183732</double>
+          <double>229.65879265091866</double>
+          <double>58.20472440944883</double>
+          <double>45.931758530183735</double>
+          <double>29.102362204724415</double>
+          <double>22.047244094488192</double>
+          <double>14.220472440944883</double>
+          <double>11.023622047244096</double>
+          <double>8.818897637795276</double>
+          <double>8.267716535433072</double>
+          <double>5.511811023622048</double>
+          <double>4.409448818897638</double>
+          <double>2.204724409448819</double>
+          <double>1.1023622047244095</double>
+          <double>0.5511811023622047</double>
+        </resolutions>
+    <tileHeight>256</tileHeight>
+    <tileWidth>256</tileWidth>
+  </gridSet>
+
+  <gridSet>
+    <!-- This does not have to be an EPSG code, you can also
+have multiple gridSet elements per SRS -->
+    <name>EPSG:3734_1024</name>
+    <srs><number>3734</number></srs>
+    <extent>
+      <coords>
+        <double>1320000</double>
+        <double>160000</double>
+        <double>2525000</double>
+        <double>976000</double>
+      </coords>http://192.168.100.153/geowebcache/
+
+
+    </extent>
+        <resolutions>
+          <double>918.6351706036746</double>
+          <double>459.31758530183732</double>
+          <double>229.65879265091866</double>
+          <double>58.20472440944883</double>
+          <double>45.931758530183735</double>
+          <double>29.102362204724415</double>
+          <double>22.047244094488192</double>
+          <double>14.220472440944883</double>
+          <double>11.023622047244096</double>
+          <double>8.818897637795276</double>
+          <double>8.267716535433072</double>
+          <double>5.511811023622048</double>
+          <double>4.409448818897638</double>
+          <double>2.204724409448819</double>
+          <double>1.1023622047244095</double>
+          <double>0.5511811023622047</double>
+        </resolutions>
+    <tileHeight>1024</tileHeight>
+    <tileWidth>1024</tileWidth>
+  </gridSet>
+</gridSets>
+
+<layers>
+
+  <wmsLayer>
+    <name>pcap_ash_treatment</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>pcap_ash_treatment</wmsLayers>
+  </wmsLayer>
+
+  <wmsLayer>
+    <name>pcap_2012</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>pcap_2012</wmsLayers>
+  </wmsLayer>
+
+  <wmsLayer>
+    <name>pcap_2012_final</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>pcap_2012_final</wmsLayers>
+  </wmsLayer>
+
+  <wmsLayer>
+    <name>pcap_2012_rings</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>pcap_2012_rings</wmsLayers>
+  </wmsLayer>
+
+  <wmsLayer>
+    <name>pcap_2012_rings_final</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>pcap_2012_rings_final</wmsLayers>
+  </wmsLayer>
+
+  <wmsLayer>
+    <name>pcap_oversample</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>pcap_oversample</wmsLayers>
+  </wmsLayer>
+
+
+  <wmsLayer>
+    <name>aerial_2011,willoughby_2007,hinckley</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>aerial_2011,willoughby_2007,hinckley</wmsLayers>
+  </wmsLayer>
+
+  <wmsLayer>
+    <name>aerial_2011_grey,willoughby_2007_grey,hinckley_grey</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>aerial_2011_grey,willoughby_2007_grey,hinckley_grey</wmsLayers>
+  </wmsLayer>
+
+  <wmsLayer>
+    <name>aerial_2011_cir</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>aerial_2011_cir</wmsLayers>
+  </wmsLayer>
+
+  <wmsLayer>
+    <name>ex_reservation_boundaries_public_private_cm,ex_cm_mowed_areas_beta,ex_canopy_coarse,ex_contours_2_all,ex_detailed_hydro_view,ex_cm_trails,ex_cuy_roads_poly,ex_facilities_footprints_cm,ex_mask</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>ex_reservation_boundaries_public_private_cm,ex_cm_mowed_areas_beta,ex_canopy_coarse,ex_contours_2_all,ex_detailed_hydro_view,ex_cm_trails,ex_cuy_roads_poly,ex_facilities_footprints_cm,ex_mask</wmsLayers>
+  </wmsLayer>
+
+  <wmsLayer>
+    <name>reservation_bounds1</name>
+        <gridSubsets>
+          <gridSubset>
+            <gridSetName>EPSG:900913</gridSetName>
+            <extent>
+              <coords>
+                <double>-9125526.577</double>
+                <double>5040703.002</double>
+                <double>-9057399.049</double>
+                <double>5107204.806</double>
+              </coords>
+            </extent>
+          </gridSubset>
+        </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>reservation_bounds</wmsLayers>
+  </wmsLayer>
+
+  <wmsLayer>
+    <name>aerial_7_county</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>aerial_7_county</wmsLayers>
+  </wmsLayer>
+
+
+  <wmsLayer>
+    <name>reservation_boundaries_public_private_cm_dissolved_mask_gradien</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>reservation_boundaries_public_private_cm_dissolved_mask_gradien</wmsLayers>
+  </wmsLayer>
+
+  <wmsLayer>
+    <name>summer_aerial_2,summer_aerial_1</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>summer_aerial_2,summer_aerial_1</wmsLayers>
+  </wmsLayer>
+ 
+  <wmsLayer>
+    <name>cuy_bridge_decks,planet_osm_line_outside_cuy_map,cuy_roads_poly,cuyahoga_street_centerlines,reservation_bounds_solid</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>cuy_bridge_decks,planet_osm_line_outside_cuy_map,cuy_roads_poly,cuyahoga_street_centerlines,reservation_bounds_solid</wmsLayers>
+  </wmsLayer>	    
+	  
+  <wmsLayer>
+    <name>ta_view</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>ta_view</wmsLayers>
+  </wmsLayer>	  	  
+	 
+  <wmsLayer>
+    <name>hillshade</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>hillshade</wmsLayers>
+  </wmsLayer>	   
+
+  <wmsLayer>
+    <name>usgs_1950s-60s</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>usgs_1950s-60s</wmsLayers>
+  </wmsLayer>	
+
+  <wmsLayer>
+    <name>signs</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>signs</wmsLayers>
+  </wmsLayer>	
+
+  <wmsLayer>
+    <name>cm_trails</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>cm_trails</wmsLayers>
+  </wmsLayer>	
+
+  <wmsLayer>
+    <name>unsanctioned_trails_view</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>unsanctioned_trails_view</wmsLayers>
+  </wmsLayer>	
+
+  <wmsLayer>
+    <name>cm_bridge_view</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>cm_bridge_view</wmsLayers>
+  </wmsLayer>
+
+  <wmsLayer>
+    <name>wetlands_view</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>wetlands_view</wmsLayers>
+  </wmsLayer>
+
+  <wmsLayer>
+    <name>cuy_contours_2</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>cuy_contours_2</wmsLayers>
+  </wmsLayer>
+
+  <wmsLayer>
+    <name>contours_2_all</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+	<parameterFilters>
+	  <regexParameterFilter>
+	    <key>format_options</key>
+	    <defaultValue></defaultValue>
+	    <regex>dpi:*</regex>
+	  </regexParameterFilter>
+	</parameterFilters>
+    <wmsLayers>contours_2_all</wmsLayers>
+  </wmsLayer>
+
+  <wmsLayer>
+    <name>soil_names</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>soil_names</wmsLayers>
+  </wmsLayer>
+
+  <wmsLayer>
+    <name>soil_hydric</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>soil_hydric</wmsLayers>
+  </wmsLayer>
+
+  <wmsLayer>
+    <name>detailed_hydro_view</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>detailed_hydro_view</wmsLayers>
+  </wmsLayer>
+
+  <wmsLayer>
+    <name>reservation_bounds</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>reservation_bounds</wmsLayers>
+  </wmsLayer>
+
+  <wmsLayer>
+    <name>impervious_update,cm_buildings,cm_buildings_outline</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>impervious_update,cm_buildings,cm_buildings_outline</wmsLayers>
+  </wmsLayer>
+
+  <wmsLayer>
+    <name>golf_view</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>golf_view</wmsLayers>
+  </wmsLayer>
+
+  <wmsLayer>
+    <name>nhd_lake_erie</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>nhd_lake_erie</wmsLayers>
+  </wmsLayer>
+
+  <wmsLayer>
+    <name>nhd_lake_erie</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>nhd_lake_erie</wmsLayers>
+  </wmsLayer>
+
+  <wmsLayer>
+    <name>reservation_bounds_solid</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>reservation_bounds_solid</wmsLayers>
+  </wmsLayer>
+
+  <wmsLayer>
+    <name>impervious_update,cuy_bridge_decks,planet_osm_line_outside_cuy_map,cuy_roads_poly,cuyahoga_street_centerlines,signs,golf_view,address_view,mask,cm_buildings,cm_buildings_outline</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>impervious_update,cuy_bridge_decks,planet_osm_line_outside_cuy_map,cuy_roads_poly,cuyahoga_street_centerlines,signs,golf_view,address_view,mask,cm_buildings,cm_buildings_outline</wmsLayers>
+  </wmsLayer>
+
+
+
+  <wmsLayer> <name>facilities_cm,facility_areas_cm,supplementary_shields,odot_interstate,odot_us_routes,odot_state_routes,planet_osm_line,cuyahoga_street_centerlines_labels,planet_osm_line_outside_cuy,detailed_hydro_labels</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>   <wmsLayers>facilities_cm,facility_areas_cm,supplementary_shields,odot_interstate,odot_us_routes,odot_state_routes,planet_osm_line,cuyahoga_street_centerlines_labels,planet_osm_line_outside_cuy,detailed_hydro_labels</wmsLayers>
+  </wmsLayer>  
+
+  <wmsLayer> <name>cuyahoga_street_centerlines,cuy_roads_poly,supplementary_shields,odot_interstate,odot_us_routes,odot_state_routes,planet_osm_line,cuyahoga_street_centerlines_labels,planet_osm_line_outside_cuy,detailed_hydro_labels</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>   <wmsLayers>cuyahoga_street_centerlines,cuy_roads_poly,supplementary_shields,odot_interstate,odot_us_routes,odot_state_routes,planet_osm_line,cuyahoga_street_centerlines_labels,planet_osm_line_outside_cuy,detailed_hydro_labels</wmsLayers>
+  </wmsLayer>
+  
+  <wmsLayer>
+    <name>bed_depth</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>bed_depth</wmsLayers>
+  </wmsLayer>
+
+  <wmsLayer>
+    <name>cm_canopy_coarse</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>cm_canopy_coarse</wmsLayers>
+  </wmsLayer>
+
+  <wmsLayer>
+    <name>geology_view</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>geology_view</wmsLayers>
+  </wmsLayer>
+
+  <wmsLayer>
+    <name>cuva_bounds</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>cuva_bounds</wmsLayers>
+  </wmsLayer>
+
+  <wmsLayer>
+    <name>census_view</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>census_view</wmsLayers>
+  </wmsLayer>
+
+  <wmsLayer>
+    <name>census_per_black</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>census_per_black</wmsLayers>
+  </wmsLayer>
+
+  <wmsLayer>
+    <name>census_under_18</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>census_under_18</wmsLayers>
+  </wmsLayer>
+
+  <wmsLayer>
+    <name>census_median_age</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>census_median_age</wmsLayers>
+  </wmsLayer>
+
+  <wmsLayer>
+    <name>census_over_65</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>census_over_65</wmsLayers>
+  </wmsLayer>
+
+  <wmsLayer>
+    <name>census_half_mile_mask</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>census_half_mile_mask</wmsLayers>
+  </wmsLayer>
+
+  <wmsLayer>
+    <name>odot_cities_cuyahoga</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>odot_cities_cuyahoga</wmsLayers>
+  </wmsLayer>
+
+  <wmsLayer>
+    <name>census_unemployment</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>census_unemployment</wmsLayers>
+  </wmsLayer>
+
+  <wmsLayer>
+    <name>census_pop_density</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>census_pop_density</wmsLayers>
+  </wmsLayer>
+
+  <wmsLayer>
+    <name>census_per_bach</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>census_per_bach</wmsLayers>
+  </wmsLayer>
+
+  <wmsLayer>
+    <name>census_income</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>census_income</wmsLayers>
+  </wmsLayer>
+
+  <wmsLayer>
+    <name>census_per_renter</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>census_per_renter</wmsLayers>
+  </wmsLayer>
+
+  <wmsLayer>
+    <name>census_per_novehicle</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>census_per_novehicle</wmsLayers>
+  </wmsLayer>
+
+  <wmsLayer>
+    <name>census_hh_size</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>census_hh_size</wmsLayers>
+  </wmsLayer>
+
+
+  <wmsLayer>
+    <name>census_half_mile_buffer</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>census_half_mile_buffer</wmsLayers>
+  </wmsLayer>
+
+  <wmsLayer>
+    <name>p_wshed_view</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>p_wshed_view</wmsLayers>
+  </wmsLayer>
+
+  <wmsLayer>
+    <name>cm_ecological_influence_zones</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>cm_ecological_influence_zones</wmsLayers>
+  </wmsLayer>
+
+  <wmsLayer>
+    <name>blank</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>blank</wmsLayers>
+  </wmsLayer>
+
+  <wmsLayer>
+    <name>census_one_mile_buffer</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>census_one_mile_buffer</wmsLayers>
+  </wmsLayer>
+
+  <wmsLayer>
+    <name>census_two_mile_buffer</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>census_two_mile_buffer</wmsLayers>
+  </wmsLayer>
+
+  <wmsLayer>
+    <name>Simple Basemap</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>Simple Basemap</wmsLayers>
+  </wmsLayer>
+
+  <wmsLayer>
+    <name>streams_phwh_2010</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>streams_phwh_2010</wmsLayers>
+   </wmsLayer>
+
+  <wmsLayer>
+    <name>pcap_sites</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>pcap_sites</wmsLayers>
+   </wmsLayer>
+
+  <wmsLayer>
+    <name>pcap_sites_orig</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>pcap_sites_orig</wmsLayers>
+   </wmsLayer>
+
+  <wmsLayer>
+    <name>pcap_sites_orig_40mbuffer</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>pcap_sites_orig_40mbuffer</wmsLayers>
+   </wmsLayer>
+
+  <wmsLayer>
+    <name>pcap_sites_orig_compass_40m</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>pcap_sites_orig_compass_40m</wmsLayers>
+   </wmsLayer>
+
+  <wmsLayer>
+    <name>pcap_sites_orig_compass_140m</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>pcap_sites_orig_compass_140m</wmsLayers>
+   </wmsLayer>
+
+  <wmsLayer>
+    <name>pcap_sites_orig_140mbuffer</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>pcap_sites_orig_140mbuffer</wmsLayers>
+   </wmsLayer>
+
+  <wmsLayer>
+    <name>reservation_bounds_no_restriction</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>reservation_bounds_no_restriction</wmsLayers>
+   </wmsLayer>
+
+  <wmsLayer>
+    <name>phwh_view</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>phwh_view</wmsLayers>
+   </wmsLayer>
+
+  <wmsLayer>
+    <name>boundaries_test</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>boundaries_test</wmsLayers>
+   </wmsLayer>
+
+  <wmsLayer>
+    <name>address_view</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>address_view</wmsLayers>
+   </wmsLayer>
+
+  <wmsLayer>
+    <name>cities_and_townships</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>cities_and_townships</wmsLayers>
+   </wmsLayer>
+
+  <wmsLayer>
+    <name>parcels</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734_1024</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>parcels</wmsLayers>
+   </wmsLayer>
+
+  <wmsLayer>
+    <name>parcels_yellow</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734_1024</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>parcels_yellow</wmsLayers>
+   </wmsLayer>
+
+  <wmsLayer>
+    <name>wetlands_owi</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>wetlands_owi</wmsLayers>
+   </wmsLayer>
+
+  <wmsLayer>
+    <name>p_wshed_view,pws_summary</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734_1024</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>p_wshed_view,pws_summary</wmsLayers>
+   </wmsLayer>
+
+  <wmsLayer>
+    <name>tpi</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>tpi</wmsLayers>
+   </wmsLayer>
+
+
+  <wmsLayer>
+    <name>greenspace_trails</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>greenspace_trails</wmsLayers>
+   </wmsLayer>
+
+  <wmsLayer>
+    <name>vernal_pools_field</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>vernal_pools_field</wmsLayers>
+   </wmsLayer>
+
+  <wmsLayer>
+    <name>vernal_pools_view</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>vernal_pools_view</wmsLayers>
+   </wmsLayer>
+
+  <wmsLayer>
+    <name>ohio_counties</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>ohio_counties</wmsLayers>
+   </wmsLayer>
+
+  <wmsLayer>
+    <name>counties_quads</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>counties_quads</wmsLayers>
+   </wmsLayer>
+
+  <wmsLayer>
+    <name>pcap</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>pcap</wmsLayers>
+   </wmsLayer>
+
+
+  <wmsLayer>
+    <name>hydroshadow</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>hydroshadow</wmsLayers>
+   </wmsLayer>
+
+  <wmsLayer>
+    <name>neorsd_impervious_cm_2012</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>neorsd_impervious_cm_2012</wmsLayers>
+   </wmsLayer>
+
+  <wmsLayer>
+    <name>neorsd_service_area</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>neorsd_service_area</wmsLayers>
+   </wmsLayer>
+
+  <wmsLayer>
+    <name>pcap_ultra</name>
+    <gridSubsets>
+      <gridSubset>
+        <gridSetName>EPSG:3734</gridSetName>
+      </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>pcap_ultra</wmsLayers>
+   </wmsLayer>
+
+
+</layers>
+
+</gwcConfiguration>
+
+
