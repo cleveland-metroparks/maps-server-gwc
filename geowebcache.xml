@@ -1110,17 +1110,6 @@ have multiple gridSet elements per SRS -->
     <wmsLayers>pcap_ultra</wmsLayers>
    </wmsLayer>
 
-  <wmsLayer>
-    <name>big_trees_inventory</name>
-    <gridSubsets>
-      <gridSubset>
-        <gridSetName>EPSG:3734</gridSetName>
-      </gridSubset>
-    </gridSubsets>
-    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
-    <wmsLayers>big_trees_inventory</wmsLayers>
-   </wmsLayer>
-
 
 </layers>
 
