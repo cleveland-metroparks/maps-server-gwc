@@ -191,6 +191,17 @@ have multiple gridSet elements per SRS -->
     <wmsLayers>aerial_2011,willoughby_2007,hinckley</wmsLayers>
   </wmsLayer>
 
+ <wmsLayer>
+   <name>aerial_2015,willoughby_2007,hinckley</name>
+   <gridSubsets>
+     <gridSubset>
+       <gridSetName>EPSG:3734</gridSetName>
+     </gridSubset>
+   </gridSubsets>
+   <wmsUrl><string>http://localhose/geoserver/wms</string></wmsUrl>
+   <wmsLayers>aerial_2015,willoughby_2007,hinckley</wmsLayers>
+ </wmsLayer>
+
   <wmsLayer>
     <name>aerial_2011_grey,willoughby_2007_grey,hinckley_grey</name>
     <gridSubsets>
@@ -332,6 +343,17 @@ have multiple gridSet elements per SRS -->
     <wmsLayers>signs</wmsLayers>
   </wmsLayer>	
 
+<wmsLayer>
+   <name>hi_docks</name>
+   <gridSubsets>
+    <gridSubset>
+     <gridSetName>EPSG:3734</gridSetName>
+    </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>hi_docks</wmsLayers>
+   </wmsLayer>
+
   <wmsLayer>
     <name>cm_trails</name>
     <gridSubsets>
@@ -355,25 +377,37 @@ have multiple gridSet elements per SRS -->
   </wmsLayer>	
 
   <wmsLayer>
-    <name>cm_bridge_view</name>
+    <name>cm_bridges</name>
     <gridSubsets>
       <gridSubset>
         <gridSetName>EPSG:3734</gridSetName>
       </gridSubset>
     </gridSubsets>
     <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
-    <wmsLayers>cm_bridge_view</wmsLayers>
+    <wmsLayers>cm_bridges</wmsLayers>
   </wmsLayer>
 
   <wmsLayer>
-    <name>wetlands_view</name>
+    <name>cm_wetlands</name>
+    <gridSubsets>
+     <gridSubset>
+      <gridSetName>EPSG:3734</gridSetName>
+     </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>cm_wetlands</wmsLayers>
+   </wmsLayer>
+
+
+  <wmsLayer>
+    <name>cm_wetlands_2005_06</name>
     <gridSubsets>
       <gridSubset>
         <gridSetName>EPSG:3734</gridSetName>
       </gridSubset>
     </gridSubsets>
     <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
-    <wmsLayers>wetlands_view</wmsLayers>
+    <wmsLayers>cm_wetlands_2005_06</wmsLayers>
   </wmsLayer>
 
   <wmsLayer>
@@ -404,6 +438,25 @@ have multiple gridSet elements per SRS -->
 	</parameterFilters>
     <wmsLayers>contours_2_all</wmsLayers>
   </wmsLayer>
+
+<wmsLayer>
+  <name>contours_2_all_yellow</name>
+  <gridSubsets>
+   <gridSubset>
+     <gridSetName>EPSG:3734</gridSetName>
+   </gridSubset>
+  </gridSubsets>
+  <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+     <parameterFilters>
+       <regexParameterFilter>
+         <key>format_options</key>
+         <defaultValue></defaultValue>
+         <regex>dpi:*</regex>
+        </regexParameterFilter>
+      </parameterFilters>
+  <wmsLayers>contours_2_all_yellow</wmsLayers>
+</wmsLayer>
+
 
   <wmsLayer>
     <name>soil_names</name>
@@ -767,6 +820,17 @@ have multiple gridSet elements per SRS -->
     <wmsLayers>cm_ecological_influence_zones</wmsLayers>
   </wmsLayer>
 
+ <wmsLayer>
+  <name>occurrence_area_boundaries_2015</name>
+  <gridSubsets>
+    <gridSubset> 
+      <gridSetName>EPSG:3734</gridSetName>
+    </gridSubset>
+  </gridSubsets>
+  <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+  <wmsLayers>occurrence_area_boundaries_2015</wmsLayers>
+</wmsLayer>
+
   <wmsLayer>
     <name>blank</name>
     <gridSubsets>
@@ -966,14 +1030,14 @@ have multiple gridSet elements per SRS -->
    </wmsLayer>
 
   <wmsLayer>
-    <name>wetlands_owi</name>
+    <name>wetlands_nwi</name>
     <gridSubsets>
       <gridSubset>
         <gridSetName>EPSG:3734</gridSetName>
       </gridSubset>
     </gridSubsets>
     <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
-    <wmsLayers>wetlands_owi</wmsLayers>
+    <wmsLayers>wetlands_nwi</wmsLayers>
    </wmsLayer>
 
   <wmsLayer>
@@ -1009,6 +1073,17 @@ have multiple gridSet elements per SRS -->
     <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
     <wmsLayers>greenspace_trails</wmsLayers>
    </wmsLayer>
+
+<wmsLayer>
+  <name>trails_leadership_network</name>
+  <gridSubsets>
+   <gridSubset>
+    <gridSetName>EPSG:3734</gridSetName>
+   </gridSubset>
+  </gridSubsets>
+  <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+  <wmsLayers>trails_leadership_network</wmsLayers>
+</wmsLayer>
 
   <wmsLayer>
     <name>vernal_pools_field</name>
