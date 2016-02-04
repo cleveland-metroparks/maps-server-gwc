@@ -192,14 +192,14 @@ have multiple gridSet elements per SRS -->
   </wmsLayer>
 
  <wmsLayer>
-   <name>aerial_2015</name>
+   <name>aerial_2015,willoughby_2007,hinckley</name>
    <gridSubsets>
      <gridSubset>
        <gridSetName>EPSG:3734</gridSetName>
      </gridSubset>
    </gridSubsets>
    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
-   <wmsLayers>aerial_2015</wmsLayers>
+   <wmsLayers>aerial_2015,willoughby_2007,hinckley</wmsLayers>
  </wmsLayer>
 
   <wmsLayer>
