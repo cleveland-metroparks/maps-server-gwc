@@ -124,6 +124,28 @@ have multiple gridSet elements per SRS -->
     <wmsLayers>pcap_ash_treatment</wmsLayers>
   </wmsLayer>
 
+ <wmsLayer>
+  <name>pcap_cameras_2011_view</name>
+  <gridSubsets>
+   <gridSubset>
+    <gridSetName>EPSG:3734</gridSetName>
+   </gridSubset>
+  </gridSubsets>
+  <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+  <wmsLayers>pcap_cameras_2011_view</wmsLayers>
+ </wmsLayer>
+
+ <wmsLayer>
+  <name>pcap_plots_2011</name>
+  <gridSubsets>
+   <gridSubset>
+    <gridSetName>EPSG:3734</gridSetName>
+   </gridSubset>
+  </gridSubsets>
+  <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+  <wmsLayers>pcap_plots_2011</wmsLayers>
+ </wmsLayer>
+
   <wmsLayer>
     <name>pcap_2012</name>
     <gridSubsets>
