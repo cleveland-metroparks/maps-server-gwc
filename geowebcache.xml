@@ -832,6 +832,17 @@ have multiple gridSet elements per SRS -->
   </wmsLayer>
 
   <wmsLayer>
+   <name>phwh_2016</name>
+   <gridSubsets>
+    <gridSubset>
+     <gridSetName>EPSG:3734</gridSetName>
+    </gridSubset>
+   </gridSubsets>
+   <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+   <wmsLayers>phwh_2016</wmsLayers>
+  </wmsLayer>
+
+  <wmsLayer>
     <name>cm_ecological_influence_zones</name>
     <gridSubsets>
       <gridSubset>
