@@ -1228,6 +1228,17 @@ have multiple gridSet elements per SRS -->
    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
    <wmsLayers>neorsd_service_area_2016</wmsLayers>
    </wmsLayer>
+  
+  <wmsLayer>
+    <name>cm_wetlands_neorsd</name>
+    <gridSubsets>
+     <gridSubset>
+      <gridSetName>EPSG:3734</gridSetName>
+     </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>cm_wetlands_neorsd</wmsLayers>
+    </wmsLayer>
 
   <wmsLayer>
     <name>neorsd_cm_potential_credits</name>
