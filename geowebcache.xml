@@ -1196,6 +1196,17 @@ have multiple gridSet elements per SRS -->
     <wmsLayers>neorsd_impervious_cm_2012</wmsLayers>
    </wmsLayer>
 
+<wmsLayer>
+ <name>neorsd_impervious_cm_2016</name>
+  <gridSubsets>
+   <gridSubset>
+    <gridSetName>EPSG:3734</gridSetName>
+   </gridSubset>
+  </gridSubsets>
+  <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+  <wmsLayers>neorsd_impervious_cm_2016</wmsLayers>
+ </wmsLayer>
+
   <wmsLayer>
     <name>neorsd_service_area</name>
     <gridSubsets>
@@ -1205,6 +1216,28 @@ have multiple gridSet elements per SRS -->
     </gridSubsets>
     <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
     <wmsLayers>neorsd_service_area</wmsLayers>
+   </wmsLayer>
+
+  <wmsLayer>
+   <name>neorsd_service_area_2016</name>
+   <gridSubsets>
+    <gridSubset>
+     <gridSetName>EPSG:3734</gridSetName>
+    </gridSubset>
+   </gridSubsets>
+   <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+   <wmsLayers>neorsd_service_area_2016</wmsLayers>
+   </wmsLayer>
+
+  <wmsLayer>
+    <name>neorsd_cm_potential_credits</name>
+    <gridSubsets>
+     <gridSubset>
+      <gridSetName>EPSG:3734</gridSetName>
+     </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>neorsd_cm_potential_credits</wmsLayers>
    </wmsLayer>
 
   <wmsLayer>
