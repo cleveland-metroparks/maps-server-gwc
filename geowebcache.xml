@@ -377,6 +377,17 @@ have multiple gridSet elements per SRS -->
    </wmsLayer>
 
   <wmsLayer>
+   <name>confined_spaces</name>
+   <gridSubsets>
+    <gridSubset>
+     <gridSetName>EPSG:3734</gridSetName>
+    </gridSubset>
+    </gridSubsets>
+    <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+    <wmsLayers>confined_spaces</wmsLayers>
+   </wmsLayer>
+
+  <wmsLayer>
     <name>cm_trails</name>
     <gridSubsets>
       <gridSubset>
