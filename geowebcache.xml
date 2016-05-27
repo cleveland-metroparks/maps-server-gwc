@@ -214,6 +214,17 @@ have multiple gridSet elements per SRS -->
   </wmsLayer>
 
  <wmsLayer>
+   <name>aerials</name>
+   <gridSubsets>
+     <gridSubset>
+       <gridSetName>EPSG:900913</gridSetName>
+     </gridSubset>
+   </gridSubsets>
+   <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+   <wmsLayers>aerial_2015,willoughby_2007,hinckley</wmsLayers>
+ </wmsLayer>
+ 
+ <wmsLayer>
    <name>aerial_2015,willoughby_2007,hinckley</name>
    <gridSubsets>
      <gridSubset>
@@ -1217,6 +1228,17 @@ have multiple gridSet elements per SRS -->
   <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
   <wmsLayers>neorsd_impervious_cm_2016</wmsLayers>
  </wmsLayer>
+
+<wmsLayer>
+ <name>cm_neorsd_2016_corrections</name>
+  <gridSubsets>
+   <gridSubset>
+    <gridSetName>EPSG:3734</gridSetName>
+   </gridSubset>
+  </gridSubsets>
+ <wmsUrl><string>http://localhost/geoserver/wms</string></wmsUrl>
+ <wmsLayers>cm_neorsd_2016_corrections</wmsLayers>
+</wmsLayer>
 
   <wmsLayer>
     <name>neorsd_service_area</name>
